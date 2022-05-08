@@ -42,3 +42,4 @@ Important Think Of DDL
 -------------------------------
 (I)  Grant
 (II) Revoke
+
