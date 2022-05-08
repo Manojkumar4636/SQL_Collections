@@ -29,14 +29,14 @@ Datatype
 => char        -> Max 2000 byte, it will occupy the null space
 
           Example
-		  -------
+          -------
 		        char(20) -> 20 is a default value 
 				MANOJKUMAR + 10NULL SPACE IT WILL RESERVED 
 
 => varchar()   -> Max 2000 byte, now deprecated
 
           Example
-		  -------
+	  -------
 		        varchar(20) -> 20 is a default value 
 				MANOJKUMAR + 10NULL SPACE IT WILL RELEASED
 
