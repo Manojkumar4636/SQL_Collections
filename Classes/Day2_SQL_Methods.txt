@@ -1,0 +1,44 @@
+SQL
+----
+1) Data Definition Language (DDL)
+2) Data Manipulation Language (DML)
+3) Data Retrieval Language (DRL)
+4) Transaction Control Language (TCL)
+5) Data Control Language (DCL)
+
+1) Data Definition Language (DDL)
+---------------------------------
+=> It is deal with Structure of the table
+
+(I)   Create
+(II)  Alter [Add, Drop]
+(III) Rename
+(IV)  Truncate -> Delete the total Data
+(V)   Drop     -> Delete the total Table
+
+Important Think Of DDL
+----------------------
+=> We can't rollback, Once you will Commit.
+=> DDL is a Auto Commit.
+
+2) Data Manipulation Language (DML)
+-----------------------------------
+(I)   Insert
+(II)  Update
+(III) Delete   ---> It will be rollback, Partial Delete is possible
+(IV)  Merge
+
+3) Data Retrieval Language (DRL)
+--------------------------------
+(I) Select
+
+4) Transaction Control Language (TCL)
+-------------------------------------
+(I)   Commit
+(II)  Rollback     ->It is upto last Commit Point
+(III) SavePoint
+
+5) Data Control Language (DCL)
+-------------------------------
+(I)  Grant
+(II) Revoke
