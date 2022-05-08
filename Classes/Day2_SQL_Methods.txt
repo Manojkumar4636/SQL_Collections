@@ -11,7 +11,7 @@ SQL
 => It is deal with Structure of the table
 
 (I)   Create
-(II)  Alter [Add, Drop]
+(II)  Alter [Add, Drop, Modify]
 (III) Rename
 (IV)  Truncate -> Delete the total Data
 (V)   Drop     -> Delete the total Table
