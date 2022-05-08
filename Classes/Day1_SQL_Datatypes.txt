@@ -1,0 +1,56 @@
+
+SQL --> Structured Query Language
+-------
+
+=> SQL is used to communicate with a database.
+
+Datatype
+--------
+1) Numeric
+2) Character
+3) Date
+4) LOB -> Large Object
+
+1) Numeric
+-----------
+=> int
+=> double
+=> float
+=> decimal
+=> number
+             number(6)    -> [444444] 6 digitNo Enter
+			 
+			 number(7.2)  -> [33333.33]
+			 
+			 number(2.2)  -> [0.99]
+			 
+2) Character
+-------------
+=> char        -> Max 2000 byte, it will occupy the null space
+
+          Example
+		  -------
+		        char(20) -> 20 is a default value 
+				MANOJKUMAR + 10NULL SPACE IT WILL RESERVED 
+
+=> varchar()   -> Max 2000 byte, now deprecated
+
+          Example
+		  -------
+		        varchar(20) -> 20 is a default value 
+				MANOJKUMAR + 10NULL SPACE IT WILL RELEASED
+
+=> varchar2()  -> Max 4000 byte, it not occupy the null space
+
+3) Date
+--------
+=> Date -> This is a default formet [12-Jun-22]
+
+=> to_date('07/23/2022','mm/dd/yyyy')
+
+4) LOB -> Large Object
+-------
+=> 2GB - Character more then 4000 bytes (CLOB)
+
+(i)   CLOB - Character Large Object
+(ii)  BLOB - Binary Large Object (audio,video and img files)
