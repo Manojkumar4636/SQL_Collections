@@ -1,9 +1,9 @@
 
 1) Data Definition Language (DDL)
-----------------------------------------------------
+---------------------------------
 
 (I) CREATE - SYNTAX
-------------------------------
+--------------------
 
 Create table table_Name
 (
@@ -69,12 +69,12 @@ modify cust_id number(6);
 (III) RENAME - SYNTAX
 -------------
 
-rename column_Name/table_Name to Changeable_Name;
+Rename column_Name/table_Name to Changeable_Name;
 
 Example:
 --------
 
-rename cust_id to cust_ID;
+Rename cust_id to cust_ID;
 
 (IV) TRUNCATE 
 -------------
