@@ -1,0 +1,106 @@
+
+1) Data Definition Language (DDL)
+----------------------------------------------------
+
+(I) CREATE - SYNTAX
+------------------------------
+
+Create table table_Name
+(
+Column1 Datatype,
+Column2 Datatype,
+Column3 Datatype,
+Column4 Datatype
+);
+
+Example:
+--------
+
+Create table Customers
+(
+cust_id number(4),
+cust_name varchar2(30),
+cust_email varchar2(30),
+cust_phoneNo number(10)
+);
+
+(II) ALTER (Add, Drop, Modify)
+---------------------
+
+ADD - SYNTAX
+------------
+
+Alter table table_Name
+add column_Name Datatype;
+
+Example:
+--------
+
+Alter table Customers
+add cust_Country varchar2(20);
+
+DROP - SYNTAX
+--------------
+
+Alter table table_Name
+drop column column_Name;
+
+Example:
+--------
+
+Alter table Customers
+drop column  cust_phoneNo;
+
+MODIFY 
+------
+=> It will Increase only Possible, Decrease not Possible.
+
+ SYNTAX
+ ------
+Alter table table_Name
+modify column_Name Datatype;
+
+Example:
+--------
+
+Alter table Customers
+modify cust_id number(6);
+
+(III) RENAME - SYNTAX
+-------------
+
+rename column_Name/table_Name to Changeable_Name;
+
+Example:
+--------
+
+rename cust_id to cust_ID;
+
+(IV) TRUNCATE 
+-------------
+=> Delete the **Total Data** and important one think cannot rollback.
+
+ SYNTAX
+ ------
+Truncate table table_Name;
+
+Example:
+-------
+
+Truncate table Customers;
+
+(V) DROP
+--------
+=> Delete the **Total Table** and important one think cannot rollback.
+
+ SYNTAX
+ ------
+ 
+ drop table table_Name;
+ 
+ Example:
+ --------
+ 
+ drop table Customers;
+ 
+
