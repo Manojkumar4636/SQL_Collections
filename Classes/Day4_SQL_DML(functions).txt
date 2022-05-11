@@ -31,27 +31,27 @@ VALUES('1002', 'MK', 'manojkumarsp009@gmail.com', '1234567891');
  ------
 => This SYNTAX is you used, then Total all rows will be change.
 
-Update Table_Name
-set Column_Name = Changeable_Value;
+UPDATE Table_Name
+SET Column_Name = Changeable_Value;
 
 Example:
 --------
 
-Update Table Customers
-set cust_phoneNo = 9876543219;
+UPDATE Table Customers
+SET cust_phoneNo = 9876543219;
 
  SYNTAX
  ------
 => This SYNTAX is you used, then Particular row only change.
 
-Update Table Table_Name
-set Column_Name = Changeable_Value;
+UPDATE Table Table_Name
+SET Column_Name = Changeable_Value;
 
 Example:
 --------
 
-Update Table Customers
-set cust_phoneNo = 9876543219 WHERE cust_ID = 1001;
+UPDATE Table Customers
+SET cust_phoneNo = 9876543219 WHERE cust_ID = 1001;
 
 
 (III) DELETE
