@@ -1,0 +1,89 @@
+
+2) Data Manipulation Language (DML)
+-------------------------------------
+
+(I) INSERT 
+-----------
+
+ SYNTAX
+ ------
+
+Insert into Table_Name
+(Column1, Column2, Column3, Column4,)
+Values('Column1_Data', 'Column2_Data', 'Column3_Data', 'Column4_Data');
+
+Example:
+--------
+
+Insert into Customers
+(cust_ID, cust_name, cust_email, cust_phoneNo)
+Values('1001', 'Manoj', 'manojkumarsp009@gmail.com', '1234567891');
+
+
+Insert into Customers
+Values('1002', 'MK', 'manojkumarsp009@gmail.com', '1234567891');
+
+
+(II) UPDATE
+------------
+
+ SYNTAX
+ ------
+=> This SYNTAX is you used, then Total all rows will be change.
+
+Update Table_Name
+set Column_Name = Changeable_Value;
+
+Example:
+--------
+
+Update Table Customers
+set cust_phoneNo = 9876543219;
+
+ SYNTAX
+ ------
+=> This SYNTAX is you used, then Particular row only change.
+
+Update Table Table_Name
+set Column_Name = Changeable_Value;
+
+Example:
+--------
+
+Update Table Customers
+set cust_phoneNo = 9876543219 WHERE cust_ID = 1001;
+
+
+(III) DELETE
+-------------
+=> It will delete Total Data.
+=>It will be Rollback and Partial delete also possible.
+
+ SYNTAX
+ ------
+=> This SYNTAX is delete Total Data.
+
+Delete from Table_Name;
+
+Example:
+--------
+
+Delete from Customers;
+
+ SYNTAX
+ ------
+=> This SYNTAX is delete Particular Data Which mean Partial delete.
+
+Delete from Table_Name
+WHERE Column_Name = Value;
+
+Example;
+--------
+
+Delete from Customers
+WHERE cust_ID = 1001;
+
+(IV) MERGE
+-----------
+
+//soon.....
