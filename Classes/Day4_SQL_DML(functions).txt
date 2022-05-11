@@ -8,20 +8,20 @@
  SYNTAX
  ------
 
-Insert into Table_Name
+INSERT INTO Table_Name
 (Column1, Column2, Column3, Column4,)
-Values('Column1_Data', 'Column2_Data', 'Column3_Data', 'Column4_Data');
+VALUES('Column1_Data', 'Column2_Data', 'Column3_Data', 'Column4_Data');
 
 Example:
 --------
 
-Insert into Customers
+INSERT INTO Customers
 (cust_ID, cust_name, cust_email, cust_phoneNo)
-Values('1001', 'Manoj', 'manojkumarsp009@gmail.com', '1234567891');
+VALUES('1001', 'Manoj', 'manojkumarsp009@gmail.com', '1234567891');
 
 
-Insert into Customers
-Values('1002', 'MK', 'manojkumarsp009@gmail.com', '1234567891');
+INSERT INTO Customers
+VALUES('1002', 'MK', 'manojkumarsp009@gmail.com', '1234567891');
 
 
 (II) UPDATE
