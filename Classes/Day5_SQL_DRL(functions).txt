@@ -1,0 +1,147 @@
+
+3) Data Retrieval Language (DRL)
+--------------------------------
+
+(I) SELECT
+------------
+=> It is used to retrieve data from Database.
+
+* WHERE      --> Which row to retrive
+* DISTINCT   --> In this statement is used to return only distinct Values.
+* ORDERBY    --> Specify the order ( ASC or DESC )
+* AS         --> Temporary name (Alias)
+* [ COUNT(), AVG(), SUM() ]
+
+
+ SYNTAX
+ ------
+=> In this SYNTAX is used to View Total_Data from the Table.
+ 
+SELECT * FROM TABLE_NAME;
+ 
+ Example:
+ --------
+ 
+SELECT * FROM Customers;
+
+
+ SYNTAX
+ ------
+=> In this SYNTAX is used to View Particular_Data from the Table.
+
+SELECT COLUMN_NAME FROM TABLE_NAME;
+
+Example:
+-------
+
+SELECT cust_phoneNo FROM Customers;
+
+ 
+ WHERE - SYNTAX
+ --------------
+ 
+ SELECT * FROM TABLE_NAME
+ WHERE COLUMN_NAME = COLUMN_VALUE;
+ 
+ Example:
+ --------
+ 
+ SELECT * FROM Customers
+ WHERE cust_email = manojkumarsp009@gmail.com;
+ 
+ 
+ DISTINCT - SYNTAX
+ ------------------
+ => A columns contains many duplicate values, and sometimes you only want to list the distinct values.
+ 
+ SELECT DISTINCT COLUMN_NAME
+ FROM TABLE_NAME;
+ 
+ Example:
+ --------
+ 
+ SELECT DISTINCT cust_name
+ FROM Customers;
+ 
+ 
+ ORDERBY - SYNTAX
+ ----------------
+ 
+ Ascending Order
+ ---------------
+ 
+ SELECT * FROM TABLE_NAME
+ ORDERBY COLUMN_NAME;
+ 
+ Example:
+ --------
+ 
+ SELECT * FROM Customers
+ ORDERBY cust_name;
+ 
+ Descending Order
+ -----------------
+ 
+ SELECT * FROM TABLE_NAME
+ ORDERBY COLUMN_NAME DESC;
+ 
+ Example:
+ --------
+ 
+ SELECT * FROM Customers
+ ORDERBY cust_name DESC;
+ 
+ ***
+ SELECT * FROM Customers
+ ORDERBY cust_name DESC, cust_email ASC;
+ ***
+ 
+ 
+ AS - SYNTAX
+ ------------
+ 
+ SELECT COLUMN_NAME AS Temporary_Name FROM Customers;
+ 
+ Example:
+ --------
+ 
+ SELECT cust_email AS EMAIL FROM Customers;
+ 
+ 
+ [ COUNT(), AVG(), SUM() ]
+ 
+ COUNT() - SYNTAX
+ -----------------
+ 
+ SELECT COUNT(COLUMN_NAME)
+ FROM TABLE_NAME;
+ 
+ Example:
+ --------
+ 
+ SELECT COUNT(cust_email)
+ FROM Customers;
+ 
+ AVG() - SYNTAX
+ --------------
+ 
+ SELECT AVG(COLUMN_NAME)
+ FROM TABLE_NAME;
+ 
+ Example:
+ --------
+ 
+ SELECT AVG(student_Mark)
+ FROM Customers;
+ 
+ SUM() - SYNTAX
+ --------------
+ 
+ SELECT SUM(student_Mark)
+ FROM Customers;
+ 
+ Example:
+ --------
+ 
+ SELECT SUM(student_Mark)
+ FROM Customers;
