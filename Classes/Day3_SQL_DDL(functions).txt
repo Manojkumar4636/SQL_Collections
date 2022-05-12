@@ -5,7 +5,7 @@
 (I) CREATE - SYNTAX
 --------------------
 
-Create table table_Name
+CREATE TABLE Table_Name
 (
 Column1 Datatype,
 Column2 Datatype,
@@ -16,7 +16,7 @@ Column4 Datatype
 Example:
 --------
 
-Create table Customers
+CREATE TABLE Customers
 (
 cust_id number(4),
 cust_name varchar2(30),
@@ -30,26 +30,26 @@ cust_phoneNo number(10)
 ADD - SYNTAX
 ------------
 
-Alter table table_Name
-add column_Name Datatype;
+ALTER TABLE Table_Name
+ADD column_Name Datatype;
 
 Example:
 --------
 
-Alter table Customers
-add cust_Country varchar2(20);
+ALTER TABLE Customers
+ADD cust_Country varchar2(20);
 
 DROP - SYNTAX
 --------------
 
-Alter table table_Name
-drop column column_Name;
+ALTER TABLE Table_Name
+DROP COLUMN column_Name;
 
 Example:
 --------
 
-Alter table Customers
-drop column  cust_phoneNo;
+ALTER TABLE Customers
+DROP COLUMN  cust_phoneNo;
 
 MODIFY 
 ------
