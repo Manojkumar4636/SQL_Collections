@@ -57,24 +57,24 @@ MODIFY
 
  SYNTAX
  ------
-Alter table table_Name
-modify column_Name Datatype;
+ALTER TABLE Table_Name
+MODIFY column_Name Datatype;
 
 Example:
 --------
 
-Alter table Customers
-modify cust_id number(6);
+ALTER TABLE Customers
+MODIFY cust_id number(6);
 
 (III) RENAME - SYNTAX
 -------------
 
-Rename column_Name/table_Name to Changeable_Name;
+RENAME column_Name/table_Name to Changeable_Name;
 
 Example:
 --------
 
-Rename cust_id to cust_ID;
+RENAME cust_id to cust_ID;
 
 (IV) TRUNCATE 
 -------------
@@ -82,12 +82,12 @@ Rename cust_id to cust_ID;
 
  SYNTAX
  ------
-Truncate table table_Name;
+TRUNCATE TABLE Table_Name;
 
 Example:
 -------
 
-Truncate table Customers;
+TRUNCATE TABLE Customers;
 
 (V) DROP
 --------
@@ -96,11 +96,11 @@ Truncate table Customers;
  SYNTAX
  ------
  
- drop table table_Name;
+ DROP TABLE Table_Name;
  
  Example:
  --------
  
- drop table Customers;
+ DROP TABLE Customers;
  
 
