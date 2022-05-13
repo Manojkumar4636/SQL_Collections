@@ -63,24 +63,24 @@ SET cust_phoneNo = 9876543219 WHERE cust_ID = 1001;
  ------
 => This SYNTAX is delete Total Data.
 
-Delete from Table_Name;
+DELETE FROM Table_Name;
 
 Example:
 --------
 
-Delete from Customers;
+DELETE FROM Customers;
 
  SYNTAX
  ------
 => This SYNTAX is delete Particular Data Which mean Partial delete.
 
-Delete from Table_Name
+DELETE FROM Table_Name
 WHERE Column_Name = Value;
 
 Example;
 --------
 
-Delete from Customers
+DELETE FROM Customers
 WHERE cust_ID = 1001;
 
 (IV) MERGE
