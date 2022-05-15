@@ -1,0 +1,65 @@
+
+Constraints In SQL
+-------------------
+=> Data validation before inserting the data into the table.
+
+(I) Primary Key
+----------------
+=> It will not allow duplicate record.
+=> It will not allow null value.
+=> Only one primary key in a table.
+
+Example:
+--------
+User_ID, ID
+
+(II) Not Null
+--------------
+=> It will not allow null value.
+=> It will allow duplicate.
+
+Example:
+--------
+First_Name, Second_Name
+
+(III) Unique
+-------------
+=> It will not allow duplicate.
+=> It will allow null.
+=> (Unique, NotNull) It is Possible.
+
+Example:
+--------
+Mobile_No
+
+(IV) Check
+-----------
+=> Data Validation.
+
+Example:
+--------
+check(age >= 18)
+
+(V) Foreign Key
+----------------
+=> Relationship between two tables.
+=> It will accept duplicate value.
+=> It should be a primary key in another table.
+=> Any no of foreign key in a table.
+
+Example:
+--------
+FOREIGN KEY (city_id) references city(city_id)
+
+
+Constraints use to Create Table
+--------------------------------
+
+CREATE TABLE Customers
+(
+Cust_ID number(4) primary key,
+Cust_Name varchar(30) not null,
+Cust_MobileNo number(10) unique check(length(Cust_MobileNo)=10),
+Cust_Age number(3) check(Cust_Age >= 18),
+City_ID number(4) references city(city_id) 
+);
