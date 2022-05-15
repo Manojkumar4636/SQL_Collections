@@ -30,3 +30,5 @@ ColumnName: Maths_Mark
 5) Get the COUNT of Maths_Mark FROM Stuents Table.
 
 *** SELECT COUNT(Maths_Mark) FROM Stuents; ***
+
+
