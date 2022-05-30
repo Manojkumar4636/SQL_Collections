@@ -1,5 +1,5 @@
 SQL - Joins
-	------------
+------------
 	=> Combine rows from 2 or more tables based on a related column.
 
 	Example: Consider the two table
@@ -35,7 +35,7 @@ SQL - Joins
 	INNER JOIN Customers ON Orders.Order_id = Customers.Cust_id;
 
 	INNER JOIN  - Ouput:
-	--------------------------------
+	--------------------
 	---------------------|---------------------|
 	Order_Name               Cust_Name
 	---------------------|---------------------|
@@ -53,7 +53,7 @@ SQL - Joins
 	LEFT JOIN Customers ON Orders.Order_id = Customers.Cust_id;
 
     LEFT JOIN  - Ouput:
-	--------------------------------
+    -------------------
 	---------------------|---------------------|
 	Order_Name               Cust_Name
 	---------------------|---------------------|
@@ -65,13 +65,13 @@ SQL - Joins
     3) RIGHT JOIN
     -------------
     Example:
-	---------------
+    --------
 	SELECT Orders.Order_Name, Customers.Cust_Name
 	FROM Orders
 	RIGHT JOIN Customers ON Orders.Order_id = Customers.Cust_id;
 
     RIGHT JOIN  - Ouput:
-	--------------------------------
+    --------------------
 	---------------------|---------------------|
 	Order_Name               Cust_Name
 	---------------------|---------------------|
@@ -90,7 +90,7 @@ SQL - Joins
 	FULL OUTER JOIN Customers ON Orders.Order_id = Customers.Cust_id;
 
     FULL OUTER JOIN  - Ouput:
-	-------------------------
+    -------------------------
 	---------------------|---------------------|
 	Order_Name               Cust_Name
 	---------------------|---------------------|
@@ -113,10 +113,10 @@ SQL - Joins
 
 
      SELF JOIN  - Ouput:
-	--------------------
+     --------------------
 
 	   E                                    M                           TableName : Employee
-    --------------|---------------------|---------------------|
+        --------------|---------------------|---------------------|
 	Emp_id            Emp_Name              Manager_id   
 	--------------|---------------------|---------------------|
 	121           |   Manoj             |   321   
