@@ -1,0 +1,128 @@
+SQL - Joins
+	------------
+	=> Combine rows from 2 or more tables based on a related column.
+
+	Example: Consider the two table
+	--------------------------------
+	First TableName : Customers
+
+	-------------|--------------------|-------------------|
+	Cust_id         Cust_Name              Cust_City   
+	-------------|--------------------|-------------------|
+	1            |   Manoj            |   Chennai   
+	2            |   Gopi             |   Chennai
+	3            |   Chinna           |   Chennai
+	-------------|--------------------|-------------------|
+
+	Second TableName : Orders
+
+	--------------|---------------------|---------------------|
+	Order_id          Order_Price           Order_Name   
+	--------------|---------------------|---------------------|
+	1             |   15000             |   VIVO   
+	4             |   12000             |   OPPO
+	2             |   10000             |   REDME
+	--------------|---------------------|---------------------|
+
+
+
+	1) INNER JOIN / JOIN
+	---------------------
+	Example:
+	--------
+	SELECT Orders.Order_Name, Customers.Cust_Name
+	FROM Orders
+	INNER JOIN Customers ON Orders.Order_id = Customers.Cust_id;
+
+	INNER JOIN  - Ouput:
+	--------------------------------
+	---------------------|---------------------|
+	Order_Name               Cust_Name
+	---------------------|---------------------|
+	VIVO                 |    Manoj           
+	OPPO                 |    Gopi                      
+	---------------------|---------------------|
+
+
+	2) LEFT JOIN
+	------------
+	Example:
+	--------
+	SELECT Orders.Order_Name, Customers.Cust_Name
+	FROM Orders
+	LEFT JOIN Customers ON Orders.Order_id = Customers.Cust_id;
+
+    LEFT JOIN  - Ouput:
+	--------------------------------
+	---------------------|---------------------|
+	Order_Name               Cust_Name
+	---------------------|---------------------|
+	VIVO                 |    Manoj           
+	OPPO                 |    Null    
+	REDME                |    Chinna                  
+	---------------------|---------------------|
+
+    3) RIGHT JOIN
+    -------------
+    Example:
+	---------------
+	SELECT Orders.Order_Name, Customers.Cust_Name
+	FROM Orders
+	RIGHT JOIN Customers ON Orders.Order_id = Customers.Cust_id;
+
+    RIGHT JOIN  - Ouput:
+	--------------------------------
+	---------------------|---------------------|
+	Order_Name               Cust_Name
+	---------------------|---------------------|
+	VIVO                 |    Manoj           
+	OPPO                 |    Gopi    
+	Null                 |    Chinna                  
+	---------------------|---------------------|
+
+
+	4) FULL OUTER JOIN
+	------------------
+	Example:
+	--------
+	SELECT Orders.Order_Name, Customers.Cust_Name
+	FROM Orders
+	FULL OUTER JOIN Customers ON Orders.Order_id = Customers.Cust_id;
+
+    FULL OUTER JOIN  - Ouput:
+	-------------------------
+	---------------------|---------------------|
+	Order_Name               Cust_Name
+	---------------------|---------------------|
+	VIVO                 |    Manoj           
+	OPPO                 |    Null    
+	REDME                |    Gopi
+	Null                 |    Chinna                  
+	---------------------|---------------------|
+
+    5) SELF JOIN
+    -------------
+    => One table considered as 2 tables
+    => Join table to itself
+
+   Example:
+   -------- 
+   SELECT DISTINCT E.Emp_Name
+   From Employee E
+   INNER JOIN Employee M ON E.Emp_id = M.Manager_id;
+
+
+     SELF JOIN  - Ouput:
+	--------------------
+
+	   E                                    M                           TableName : Employee
+    --------------|---------------------|---------------------|
+	Emp_id            Emp_Name              Manager_id   
+	--------------|---------------------|---------------------|
+	121           |   Manoj             |   321   
+	321           |   Gopi              |   500
+	421           |   Chinna            |   987
+	--------------|---------------------|---------------------|
+
+
+
